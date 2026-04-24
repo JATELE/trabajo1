@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index,follow">
+    <meta name="author" content="Ferretería Central">
+    <meta name="description" content="Sistema de acceso ferretería">
+    <meta name="keywords" content="ferretería, herramientas, inventario, login">
+
+    <link rel="icon" href="imagenes/icono.ico">
+    <link rel="stylesheet" href="assetes/css/style.css">
+    <title>Ferretería Central - Login</title>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="login-container">
+
+        <!-- PANEL DERECHO (MENSAJE FERRETERÍA) -->
+        <div class="right-panel">
+            <h2>🔧 Ferretería Central</h2>
+            <p>
+                Gestiona inventario, ventas y herramientas de forma rápida y segura.
+                Accede al sistema para controlar tu negocio.
+            </p>
+        </div>
+
+        <!-- PANEL IZQUIERDO (LOGIN) -->
+        <div class="left-panel">
+            <div class="caja">
+
+                <form action="" method="POST" autocomplete="on">
+
+                    <img src="imagenes/logo.png" class="logo">
+
+                    <h1>Acceso al Sistema</h1>
+
+                    <p class="descripcion">
+                        Ingresa tus credenciales para acceder al panel de administración de la ferretería.
+                    </p>
+
+                    <div class="input-group">
+                        <label>Usuario</label>
+                        <input type="text" placeholder="Ej: admin" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Contraseña</label>
+                        <input type="password" id="password" placeholder="••••••••" required>
+                    </div>
+
+                    <div class="extra-options">
+
+                        <label>
+                            <input type="checkbox" id="togglePassword">
+                            Mostrar contraseña
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            Recordarme
+                        </label>
+
+                        <a href="RecuperarContrasena.html">¿Olvidaste tu contraseña?</a>
+
+                    </div>
+
+                    <button type="submit">Ingresar</button>
+
+                    <p class="register">
+                        ¿No tienes cuenta? <a href="Registrar.html">Solicitar acceso</a>
+                    </p>
+
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+</body>
+</html>
