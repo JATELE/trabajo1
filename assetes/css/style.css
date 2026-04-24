@@ -1,0 +1,291 @@
+/* Importar fuente moderna */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   BODY (FONDO FERRETERÍA)
+========================= */
+body {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+ align-content: center;
+  background-image: url("https://i.pinimg.com/originals/1f/fc/27/1ffc2732fd1f4a03802051f0f38cd7dd.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+}
+
+/* OSCURECER FONDO */
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 0;
+}
+
+/* CONTENIDO ENCIMA */
+.container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* =========================
+   LOGIN SPLIT
+========================= */
+.login-container {
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+  height: 700px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+}
+
+/* =========================
+   PANEL IZQUIERDO (LOGIN)
+========================= */
+.left-panel {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.97);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* CAJA */
+.caja {
+  background: rgba(255, 255, 255, 0.98);
+  padding: 40px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  border: 1px solid #e7e5e4;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.caja:hover {
+  transform: translateY(-5px);
+}
+
+/* LOGO */
+.logo {
+  width: 70px;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 3px 3px rgba(0,0,0,0.2));
+}
+
+/* TEXTOS */
+h1 {
+  color: #1f2937;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.descripcion {
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin-bottom: 25px;
+}
+
+/* INPUTS FERRETERÍA */
+.input-group {
+  text-align: left;
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  font-size: 0.85rem;
+  color: #374151;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #d6d3d1;
+  border-radius: 6px;
+  outline: none;
+  transition: 0.3s;
+  background: #f5f5f4;
+}
+
+input:focus {
+  border-color: #b45309;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(180, 83, 9, 0.3);
+}
+
+/* CHECKBOX */
+.extra-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 0.8rem;
+  text-align: left;
+}
+
+.extra-options label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.extra-options input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #b45309;
+}
+
+/* BOTÓN FERRETERÍA */
+button {
+  width: 100%;
+  padding: 12px;
+  background: #b45309;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+button:hover {
+  background-color: #92400e;
+  transform: scale(1.03);
+}
+
+/* LINKS */
+.register {
+  margin-top: 15px;
+  font-size: 0.85rem;
+}
+
+.register a,
+a {
+  color: #b45309;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   PANEL DERECHO (FERRETERÍA)
+========================= */
+.right-panel {
+  flex: 1;
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px;
+  overflow: hidden;
+}
+
+/* IMAGEN */
+.right-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image: url("https://i.pinimg.com/236x/2c/f1/4e/2cf14e4d89bc824aa0d30c2eebcac127.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  transform: scale(1.1);
+  z-index: 0;
+}
+
+/* OSCURECER */
+.right-panel::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  z-index: 1;
+}
+
+/* TEXTO */
+.right-panel h2,
+.right-panel p {
+  position: relative;
+  z-index: 2;
+}
+
+.right-panel h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.right-panel p {
+  opacity: 0.9;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 900px) {
+  .login-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .right-panel {
+    padding: 40px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .caja {
+    padding: 25px 20px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  input {
+    padding: 10px;
+  }
+
+  button {
+    padding: 10px;
+  }
+}
