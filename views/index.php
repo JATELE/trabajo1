@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ferretería Central</title>
+  
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  
 
   <style>
     * {
@@ -156,8 +158,9 @@
   <h1>🔧 Ferretería Central</h1>
   <nav>
     <a href="#inicio">Inicio</a>
+    <a href="cliente.php" class="active">Clientes</a>
     <a href="#servicios">Servicios</a>
-    <a href="login.html">Login</a>
+    <a href="logout.php">Salir</a>
   </nav>
 </header>
 
